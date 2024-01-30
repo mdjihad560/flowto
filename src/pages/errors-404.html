@@ -1,0 +1,26 @@
+{% extends "layout/layout.html" %}
+ {% block content %}
+
+{% include "../templates/layout/header-footer/main-header.html" %} 
+
+<div class="section flowto-extra-section">
+  <div class="container">
+    <div class="flowto-errors-wrap">
+      <div class="flowto-errors-thumb">
+        <img src="assets/images/about/404.png" alt="">
+      </div>
+      <h2>Oops! Looks like you took a wrong turn</h2>
+      <div class="flowto-extara-mt">
+        <a class="flowto-default-btn" href="index.html"><span>Back To Home</span></a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End section -->
+
+
+
+
+{% include "../templates/layout/header-footer/main-footer.html" %} 
+  
+{% endblock %}

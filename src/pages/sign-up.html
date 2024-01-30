@@ -1,0 +1,52 @@
+
+{% extends "layout/layout.html" %} {% block content %}
+
+{% include "../templates/layout/header-footer/main-header.html" %} 
+
+
+<div class="section flowto-extra-section">
+  <div class="container">
+    <div class="flowto-section-title center">
+      <h2>Create Account</h2>
+    </div>
+    <div class="flowto-account-wrap">
+      <form action="#">
+        <div class="flowto-account-field">
+          <label>Enter your full name</label>
+          <input type="text" placeholder="Adam Smith">
+        </div>
+        <div class="flowto-account-field">
+          <label>Enter email address</label>
+          <input type="email" placeholder="example@gmail.com">
+        </div>
+        <div class="flowto-account-field">
+          <label>Enter Password</label>
+          <input type="password" placeholder="Enter Password">
+        </div>
+        <div class="flowto-account-checkbox">
+          <input type="checkbox" id="check">
+          <label for="check">I have read and accept the </label>
+        </div>
+        <button id="flowto-account-btn" type="submit"><span>Create account</span></button>
+        <div class="flowto-or">
+          <p>or</p>
+        </div>
+        <a href="#" class="flowto-connect-login">
+          <img src="assets/images/icon/google.svg" alt="">
+          Sign up with Google
+        </a>
+        <a href="#" class="flowto-connect-login">
+          <img src="assets/images/icon/facebook.svg" alt="">
+          Sign up with Facebook
+        </a>
+
+        <div class="flowto-account-bottom">
+          <p>Already have an account? <a href="sign-in.html">Log in here</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+  
+{% endblock %}

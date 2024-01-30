@@ -1,0 +1,40 @@
+.flowto-navigation {
+  margin-top: 80px;
+  text-align: center;
+  @include max(991px) {
+    margin-top: 60px;
+  }
+  .pagination{
+    justify-content: center;
+  }
+}
+
+.flowto-navigation span.current, 
+.page-links .current {
+  cursor: not-allowed;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border-color: var(--primary-color);
+}
+.flowto-navigation a, 
+.flowto-navigation span, 
+.page-links a, 
+.page-links span {
+  display: inline-block;
+  margin: 0 5px;
+  color: var(--body-color);
+  border-radius: 3px;
+  padding: 9px 18px;
+  width: 50px;
+  text-transform: capitalize;
+  border: 1px solid var(--heading-color);
+}
+.flowto-navigation a.next{
+  width: auto;
+}
+.flowto-navigation a:hover, 
+.page-links a:hover {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border-color: var(--primary-color);
+}

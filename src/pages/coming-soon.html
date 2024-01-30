@@ -1,0 +1,52 @@
+
+{% extends "layout/layout.html" %} {% block content %}
+
+{% include "../templates/layout/header-footer/main-header.html" %} 
+
+
+<div class="section flowto-extra-section">
+  <div class="container">
+    <div class="flowto-section-title center">
+      <h2>
+        Something great is coming soon! 
+      </h2>
+    </div>
+    <div class="flowto-countdown-wrap">
+      <div class="flowto-countdown-item">
+        <div class="countdown-days">
+          <div class="number"></div>
+        </div>
+        <p>Days</p>
+      </div>
+      <div class="flowto-countdown-item">
+        <div class="countdown-hours">
+          <div class="number"></div>
+        </div>
+        <p>Hours</p>
+      </div>
+      <div class="flowto-countdown-item">
+        <div class="countdown-minutes">
+          <div class="number"></div>
+        </div>
+        <p>Minutes</p>
+      </div>
+      <div class="flowto-countdown-item">
+        <div class="countdown-seconds">
+          <div class="number"></div>
+        </div>
+        <p>Seconds</p>
+      </div>
+    </div>
+    <form action="#">
+      <div class="flowto-coming-newsletter">
+        <input type="email" placeholder="Enter your email">
+        <button type="submit" id="flowto-notified-btn">Get Notified</button>
+        <p>We do not share your information with any third party & no spam*</p>
+      </div>
+    </form>
+  </div>
+</div>
+
+{% include "../templates/layout/header-footer/extra-footer.html" %} 
+
+{% endblock %}
