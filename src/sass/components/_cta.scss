@@ -1,10 +1,8 @@
+.bg-cover{
+  background-size: cover;
+  background-position: center center;
+}
 .flowto-cta{
-  &-section{
-    padding-top: 100px;
-    @include max(991px) {
-      padding-top: 80px;
-    }
-  }
   &-thumb{
     @include max(991px) {
       text-align: center;

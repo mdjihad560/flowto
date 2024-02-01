@@ -6,12 +6,12 @@
   height: 185px;
   opacity: 0;
   border-radius: 100%;
-  left: -52px;
-  top: -52px;
+  left: -45px;
+  top: -45px;
   z-index: 0;
   -webkit-animation: waves 3s ease-in-out infinite;
   animation: waves 3s ease-in-out infinite;
-  background-color: var(--dark-bg);
+  background-color: var(--white-bg);
   z-index: -1;
   &.waves-2{
     width: 200px;

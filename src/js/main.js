@@ -242,18 +242,62 @@ if(flowto_brand_slider3.is_exist()){
 /*--------------------------------------------------------------
 flowto TESTIMONIAL SLIDER
 --------------------------------------------------------------*/
+// var flowto_t_slider = $('.flowto-testimonial-slider');
+// if(flowto_t_slider.is_exist()){
+//   flowto_t_slider.slick({
+//   infinite: true,
+//   slidesToShow: 1, 
+//   slidesToScroll: 1,
+//   arrows: false,
+//   dots: false,
+//   autoplay: false, 
+// });
+
+// }
+
+/*--------------------------------------------------------------
+flowto TESTIMONIAL SLIDER
+--------------------------------------------------------------*/
+
 var flowto_t_slider = $('.flowto-testimonial-slider');
 if(flowto_t_slider.is_exist()){
   flowto_t_slider.slick({
   infinite: true,
-  slidesToShow: 1, 
+  slidesToShow: 4, 
   slidesToScroll: 1,
   arrows: false,
   dots: false,
-  autoplay: false, 
+  autoplay: true , 
+  autoplaySpeed: 0,
+  speed: 10000,
+  cssEase: 'linear',
+  pauseOnHover:true,
+  adaptiveHeight: true,
+  responsive: [
+    {
+      breakpoint: 1349,
+      settings: {
+        slidesToShow: 3,
+      }
+    },
+  {
+    breakpoint: 991,
+    settings: {
+      slidesToShow: 2,
+    }
+  },
+  {
+    breakpoint: 767,
+    settings: {
+      slidesToShow: 1,
+    }
+  },
+
+  ]
 });
 
 }
+
 
 /*--------------------------------------------------------------
 flowto MAGNIFIC POPUP JS INIT

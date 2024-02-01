@@ -1,6 +1,17 @@
 
 
 .flowto-accordion{
+  &-wrap{
+    &.wrap2{
+      gap: 80px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      @include max(1199px) {
+        gap: 24px;
+        grid-template-columns:  1fr;
+      }
+    }
+  }
   &-item{
     position: relative;
     margin-bottom: 24px;
@@ -13,14 +24,16 @@
     }
     &.open .flowto-active-icon{
       transform: rotate(180deg);
+      &.plus{
+        transform: rotate(130deg);
+        path{
+          stroke: var(--primary-color);
+        }
+      }
     }
     &.open{
       .flowto-accordion-body{
         display: block;
-        p{
-          font-size: 18px;
-          line-height: 28px;
-        }
       }
     }
     .flowto-faq-check{
@@ -37,60 +50,29 @@
   &-body{
     display: none;
     padding-top: 15px;
+    &.large{
+      p{
+        font-size: 21px;
+        line-height: 34px;
+        @include max(991px) {
+          font-size: 20px;
+          line-height: 28px;
+        }
+      }
+    }
+    
     &.default{
       display: block;
     }
+    
   
     &.extra-max-width{
       max-width: 400px;
     }
   }
+  
 }
 
-
-
-.flowto-accordion{
-  &-wrap2{
-    margin: 0;
-    .flowto-accordion-item{
-      background-color: transparent;
-      &.open .flowto-active-icon{
-        transform: rotate(0);
-        opacity: 0;
-      }
-      &.open .flowto-inactive-icon{
-        opacity: 1;
-      }
-    }
-    .flowto-accordion-header{
-      padding-right: 20px;
-      p{
-        font-weight: 600;
-        margin: 0;
-      }
-    }
-    .flowto-accordion-body{
-      padding-right: 70px;
-      @include max(991px) {
-        padding-right: 0;
-      }
-      p{
-        font-size: 18px;
-        color: var(--body-color)!important;
-      }
-    }
-    .flowto-accordion-item.open{
-      background-color: transparent;
-    }
-    .flowto-active-icon, 
-    .flowto-inactive-icon{
-      top: 0;
-    }
-    .flowto-inactive-icon{
-      opacity: 0;
-    }
-  }
-}
 
 .flowto-active-icon, 
 .flowto-inactive-icon {

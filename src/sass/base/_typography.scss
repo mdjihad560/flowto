@@ -75,10 +75,9 @@ h4,
   letter-spacing: -0.3px;
   @include max(767px) {
     line-height: 1.2em;
-  }
-  @include max(479px) {
     font-size: 24px;
   }
+ 
 }
 h5,
 .h5 {

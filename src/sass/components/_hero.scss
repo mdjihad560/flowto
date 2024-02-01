@@ -42,6 +42,9 @@
     }
     &.small-wrap{
         max-width: 640px;
+        @include max(991px) {
+          margin: 0 auto;
+        }
     }
     &.light{
       h1, p{
