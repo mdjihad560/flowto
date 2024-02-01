@@ -39,11 +39,24 @@
           align-items: center;
           justify-content: center;
           border-radius:100px;
-          border: 1px solid var(--heading-color);
+          color: var(--white-color);
+          background-color: rgba(255, 255, 255, 0.1);
           &:hover{
-            color: var(--white-color);
             background-color: var(--primary-color);
-            border: 1px solid var(--primary-color);
+          }
+        }
+      }
+    }
+    &.dark{
+      ul{
+        li{
+          a{
+            color: var(--heading-color);
+            background-color: rgba(18, 18, 18, 0.1);
+            &:hover{
+              color: var(--white-color);
+              background-color: var(--primary-color);
+            }
           }
         }
       }

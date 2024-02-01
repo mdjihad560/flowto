@@ -362,8 +362,8 @@
   letter-spacing: normal;
   position: relative;
 }
-.white-menu .site-menu-main .nav-link-item, 
-.white-menu .flowto-login-btn {
+.header-white .site-menu-main .nav-link-item, 
+.header-white .flowto-login-btn {
   color: var(--white-color);
 }
 
@@ -648,7 +648,7 @@
     width: 24px;
     position: relative;
   }
-  .site-header.white-menu .mobile-menu-trigger span {
+  .site-header.header-white .mobile-menu-trigger span {
     background-color: var(--white-color);
   }
   .reveal-header .mobile-menu-trigger span {
@@ -663,8 +663,8 @@
     height: 100%;
     background-color: var(--heading-color);
   }
-  .site-header.white-menu .mobile-menu-trigger span:before,
-  .site-header.white-menu .mobile-menu-trigger span:after {
+  .site-header.header-white .mobile-menu-trigger span:before,
+  .site-header.header-white .mobile-menu-trigger span:after {
     background-color: var(--white-color);
   }
   .reveal-header .mobile-menu-trigger span:before,

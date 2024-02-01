@@ -13,15 +13,28 @@
   }
 }
 
-.flowto-app-wrap {
+.flowto-two-wrap {
   display: flex;
   align-items: center;
   gap: 24px;
+  flex-wrap: wrap;
   position: relative;
   @include max(991px) {
     justify-content:center;
   }
-  
+  &.center{
+    justify-content:center;
+  }
+  &.footer-app{
+    display: block;
+    .flowto-app{
+      margin-bottom: 12px;
+      display: block;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
 }
 .flowto-app{
   transition: all 0.4s;
@@ -30,9 +43,13 @@
   }
 }
 .flowto-cta-shape{
-  right: 0;
+  right: -40px;
+  top: 0;
   position: absolute;
   animation: float-left-right 6s ease-in-out infinite;
+  @include max(1349px) {
+    width: 150px;
+  }
   @include max(991px) {
     display: none;
   }
@@ -41,21 +58,31 @@
 
 .flowto-cta {
   &-wrap{
-    padding: 100px 20px;
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    border-radius: 40px;
+    padding: 80px;
+    border-radius: 10px;
+    position: relative;
+    background-color: var(--blue-bg);
     @include max(991px) {
-      padding: 80px 20px;
+      padding: 60px;
     }
     @include max(767px) {
-      padding: 60px 20px;
+      padding: 50px;
+    }
+    &.wrap2{
+      overflow: hidden;
+      padding: 100px 80px;
+      @include max(991px) {
+        padding: 60px;
+      }
+      @include max(767px) {
+        padding: 50px;
+      }
     }
   }
   &-content{
-    max-width: 700px;
+    max-width: 730px;
     margin: 0 auto;
+    text-align: center;
     h2{
       margin-bottom: 50px;
       color: var(--white-color);

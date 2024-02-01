@@ -1,29 +1,30 @@
 .flowto-footer{
   &-section{
-    &.main-footer{
-      border-top: 1px solid var(--light-color);
-    }
+    background-size: cover;
   }
   &-top{
-    padding: 130px 0 100px;
+    padding: 100px 0;
     @include max(991px) {
-      padding: 100px 0;
+      padding: 80px 0;
     }
     @include max(767px) {
-      padding: 80px 0;
+      padding: 60px 0 25px;
     }
   }
   &-textarea{
     @include max(1199px) {
       max-width: 600px;
+      margin-bottom: 35px;
     }
     img{
       margin-bottom: 30px;
     }
     p{
-      margin-bottom: 45px;
+      font-size: 21px;
+      line-height: 34px;
       @include max(991px) {
-        margin-bottom: 30px;
+        font-size: 20px;
+        line-height: 30px;
       }
     }
     &.light{
@@ -36,7 +37,8 @@
     p{
       margin-bottom: 30px;
       font-weight: 600;
-      color: var(--heading-color2);
+      font-size: 21px;
+      color: var(--heading-color);
       @include max(767px) {
         margin-bottom: 17px;
       }
@@ -48,8 +50,16 @@
     }
   }
   &-menu{
-    @include max(1199px) {
-      margin-top: 40px;
+    p{
+      font-size: 21px;
+      line-height: 34px;
+      @include max(991px) {
+        font-size: 20px;
+        line-height: 28px;
+      }
+    }
+    @include max(767px) {
+      margin-bottom: 35px;
     }
     ul{
       li{
@@ -70,6 +80,34 @@
         }
       }
       
+    }
+    &.menu-inline{
+      ul{
+        li{
+          display: inline-block;
+          padding: 0 15px;
+          margin: 0;
+          position: relative;
+          &:first-child{
+            padding-left: 0;
+          }
+          &:last-child{
+            padding-right: 0;
+          }
+          &::before{
+            content: '';
+            right: -4px;
+            top: 9px;
+            width: 1px;
+            height: 14px;
+            position: absolute;
+            background-color: var(--gray-color);
+          }
+          &:last-child::before{
+            content: none;
+          }
+        }
+      }
     }
 
     &.light{
@@ -112,9 +150,20 @@
     align-items: center;
     justify-content: space-between;
     border-top: 1px solid var(--light-color);
-    @include max(767px) {
+    @include max(991px) {
       display: block;
       text-align: center;
+    }
+    &.footer-nine{
+      @include max(1199px) {
+        display: block;
+        text-align: center;
+      }
+      .flowto-two-wrap{
+        @include max(1199px) {
+          justify-content: center;
+        }
+      }
     }
     &.center{
       display: block;
@@ -126,12 +175,15 @@
   }
 }
 .flowto-copywright{
-  @include max(767px) {
+  @include max(991px) {
     margin-top: 20px;
   }
-  p{
-    font-size: 16px;
+  &.footer-nine{
+    @include max(1199px) {
+      margin: 20px 0;
+    }
   }
+
   &.light{
     color: var(--white-color);
   }
@@ -148,25 +200,41 @@
 }
 
 .flowto-footer-extra{
-  &-top{
-    padding: 90px 0 120px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  &-title{
     @include max(991px) {
-      padding: 90px 0 100px;
       text-align: center;
     }
-    @include max(767px) {
-      padding: 70px 0 80px;
-    }
-  }
-  &-title{
     h2{
       color: var(--white-color);
     }
   }
 }
 
+.flowto-gmail{
+  font-size: 21px;
+  color: var(--white-color);
+  text-decoration: underline;
+  margin-bottom: 20px;
+  display: inline-block;
+  &.dark{
+    color: var(--heading-color);
+  }
+}
 
+.footer-extra-padding{
+  margin-top: -230px;
+  .flowto-footer-top{
+    padding: 365px 0 100px;
+    @include max(991px) {
+      padding: 300px 0 80px;
+    }
+    @include max(767px) {
+      padding: 300px 0 35px;
+    }
+  }
+}
+
+// rtl support
 [dir="rtl"]{
   .extar-margin{
     margin-left: 0;

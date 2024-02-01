@@ -1,58 +1,38 @@
 
 
 .flowto-accordion{
-  &-wrap{
-    margin-right: 65px;
-    @include max(1199px) {
-      margin-right: 20px;
-    }
-    @include max(991px) {
-      margin-top: 40px;
-      margin-right: 0;
-    }
-  }
   &-item{
-    padding: 23px 24px;
     position: relative;
-    margin-bottom: 20px;
-    border-radius: 20px;
+    margin-bottom: 24px;
     transition: all 0.4s;
-    border: 1px solid var(--light-color);
-    background-color: var(--light-bg);
+    &.p-left{
+      padding-left: 40px;
+    }
     &:last-child{
       margin-bottom: 0;
     }
     &.open .flowto-active-icon{
       transform: rotate(180deg);
-      svg{
-        path{
-          stroke: var(--secondary-color);
+    }
+    &.open{
+      .flowto-accordion-body{
+        display: block;
+        p{
+          font-size: 18px;
+          line-height: 28px;
         }
       }
     }
-    &.open{
-      background-color: var(--dark-bg);
-      .flowto-accordion-body{
-        display: block;
-        color: var(--white-color);
-      }
-      .flowto-accordion-header{
-        h3{
-          color: var(--secondary-color);
-        }
-      }
+    .flowto-faq-check{
+      position: absolute;
+      left: 0;
+      top: -3px;
     }
   }
   &-header{
     cursor: pointer;
     position: relative;
-    h3{
-      @include max(767px) {
-        font-size: 24px;
-        padding-right: 25px;
-      }
-    }
-   
+    padding-right: 30px;
   }
   &-body{
     display: none;
@@ -60,8 +40,9 @@
     &.default{
       display: block;
     }
-    @include max(991px) {
-      padding: 24px 0 0;
+  
+    &.extra-max-width{
+      max-width: 400px;
     }
   }
 }
@@ -114,7 +95,7 @@
 .flowto-active-icon, 
 .flowto-inactive-icon {
   position: absolute;
-  top: 5px;
+  top: 0px;
   right: 0px;
   transition: all 0.4s;
   svg{

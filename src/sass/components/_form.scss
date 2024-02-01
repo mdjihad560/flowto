@@ -10,15 +10,16 @@ input, textarea {
   margin: 0;
   height: 60px;
   width: 100%;
-  color:var(--body-color);
+  color:#7F8995;
+  font-weight: 700;
   font-size: 16px;
-  border-radius: 10px;
-  background-color: var(--white-bg);
+  border-radius: 50px;
+  background-color: transparent;
   padding: 15px 24px !important;
   border: none!important;
   transition: all 0.4s;
   letter-spacing: 0.5px;
-  border: 1px solid var(--light-color)!important;
+  border: 1px solid var(--gray-color)!important;
 }
 input:focus, 
 textarea:focus{
@@ -35,90 +36,84 @@ textarea {
 
 input::-webkit-input-placeholder, 
 textarea::-webkit-input-placeholder{ /* WebKit, Blink, Edge */
-    color:    var(--body-color);
+    color:    #7F8995;
     opacity: 1;
 }
 input:-moz-placeholder, 
 textarea:-moz-placeholder{ /* Mozilla Firefox 4 to 18 */
-   color:    var(--body-color);
+   color:    #7F8995;
    opacity:  1;
 }
 input::-moz-placeholder, 
 textarea::-moz-placeholder{ /* Mozilla Firefox 19+ */
-   color:    var(--body-color);
+   color:    #7F8995;
    opacity:  1;
 }
 input:-ms-input-placeholder, 
 textarea:-ms-input-placeholder{ /* Internet Explorer 10-11 */
-   color:    var(--body-color);
+   color:    #7F8995;
    opacity: 1;
 }
 input::-ms-input-placeholder, 
 textarea::-ms-input-placeholder{ /* Microsoft Edge */
-   color:    var(--body-color);
+   color:    #7F8995;
    opacity: 1;
 }
 
 input::placeholder, 
 textarea::placeholder{ /* Most modern browsers support this now. */
-   color:    var(--body-color);
+   color:    #7F8995;
    opacity: 1;
 }
 
 .flowto-subscribe{
    &-one{
+      max-width: 550px;
+      margin: 0 auto;
       position: relative;
       input{
-      height: 50px;
       border-radius: 3px;
-      color: var(--body-color);
-      border: 1px solid #ccc!important;
-      &:focus, 
-      &:focus{
-         border: 1px solid var(--primary-color)!important;
-      }
+      color: var(--white-color);
+      border: 1px solid var(--white-color)!important;
+ 
       &::-webkit-input-placeholder, 
       &::-webkit-input-placeholder{ /* WebKit, Blink, Edge */
-         color:    #666666;
+         color:    var(--white-color);
          opacity: 1;
       }
       &:-moz-placeholder, 
       &:-moz-placeholder{ /* Mozilla Firefox 4 to 18 */
-         color:    #666666;
+         color:    var(--white-color);
          opacity:  1;
       }
       &::-moz-placeholder, 
       &::-moz-placeholder{ /* Mozilla Firefox 19+ */
-         color:    #666666;
+         color:    var(--white-color);
          opacity:  1;
       }
       &:-ms-input-placeholder, 
       &:-ms-input-placeholder{ /* Internet Explorer 10-11 */
-         color:    #666666;
+         color:    var(--white-color);
          opacity: 1;
       }
       &::-ms-input-placeholder, 
       &::-ms-input-placeholder{ /* Microsoft Edge */
-         color:    #666666;
+         color:    var(--white-color);
          opacity: 1;
       }
 
       &::placeholder, 
       &::placeholder{ /* Most modern browsers support this now. */
-         color:    #666666;
+         color:    var(--white-color);
          opacity: 1;
       }
    }
    }
-
    &-two{
-      max-width: 450px;
-      margin: 0 auto;
       position: relative;
       input{
-      height: 60px;
       border-radius: 50px;
-      color: var(--body-color);
+      color: #7F8995;
       border: none;
       background-color: var(--white-bg);
       &:focus, 
@@ -127,33 +122,33 @@ textarea::placeholder{ /* Most modern browsers support this now. */
       }
       &::-webkit-input-placeholder, 
       &::-webkit-input-placeholder{ /* WebKit, Blink, Edge */
-         color:    #666666;
+         color:    #7F8995;
          opacity: 1;
       }
       &:-moz-placeholder, 
       &:-moz-placeholder{ /* Mozilla Firefox 4 to 18 */
-         color:    #666666;
+         color:    #7F8995;
          opacity:  1;
       }
       &::-moz-placeholder, 
       &::-moz-placeholder{ /* Mozilla Firefox 19+ */
-         color:    #666666;
+         color:    #7F8995;
          opacity:  1;
       }
       &:-ms-input-placeholder, 
       &:-ms-input-placeholder{ /* Internet Explorer 10-11 */
-         color:    #666666;
+         color:    #7F8995;
          opacity: 1;
       }
       &::-ms-input-placeholder, 
       &::-ms-input-placeholder{ /* Microsoft Edge */
-         color:    #666666;
+         color:    #7F8995;
          opacity: 1;
       }
 
       &::placeholder, 
       &::placeholder{ /* Most modern browsers support this now. */
-         color:    #666666;
+         color:    #7F8995;
          opacity: 1;
       }
    }
@@ -166,7 +161,7 @@ textarea::placeholder{ /* Most modern browsers support this now. */
       input{
       height: 60px;
       border-radius: 50px;
-      color: var(--body-color);
+      color: #7F8995;
       padding-left: 55px!important;
       border: 1px solid #ccc!important;
       &:focus, 
@@ -217,23 +212,26 @@ textarea::placeholder{ /* Most modern browsers support this now. */
    right: 5px;
    position: absolute;
    &.one{
-      font-size: 14px;
-      padding: 8px 15px;
-   }
-   &.two, &.three{
-      border-radius: 50px;
       font-size: 16px;
       padding: 13px 31px;
+      color: var(--primary-color);
+      background-color: var(--white-bg);
+      &:hover{
+         color: var(--white-color);
+      }
       @include max(479px) {
          position: static;
-         margin-top: 20px;
          width: 100%;
-         color: var(--primary-color);
-         background-color: var(--white-bg);
-         &:hover{
-            color: var(--heading-color);
-         }
+         margin-top: 20px;
       }
+   }
+   &.two{
+      border-radius: 50px;
+      font-size: 16px;
+      padding: 18px;
+      position: static;
+      width: 100%;
+      margin-top: 12px;
    }
    @include max(479px) {
       &.three{

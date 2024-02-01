@@ -1,19 +1,19 @@
 // fonts variable
-$heading-font: 'Raleway', sans-serif !default;
-$body-font: 'Inter', sans-serif!default;
+$heading-font: 'Public Sans', sans-serif !default;
+$body-font: 'Public Sans', sans-serif!default;
 
 // color variable
 :root {
-  --heading-color: #000;
-  --body-color: #0C0C0C;
-  --primary-color: #2332DD;
-  --secondary-color: #ABFB4F;
+  --heading-color: #121212;
+  --body-color: #414141;
+  --primary-color: #3147FF;
+  --secondary-color: #1AE5BE;
   --white-color: #ffffff;
-  --gray-color: #414141;
-  --light-color: #E6E6E6;
+  --gray-color: #CBD2D9;
+  --light-color: #EAEDF0;
   --dark-bg: #000000;
   --blue-bg: #0000FF;
-  --light-bg: #FAFAFA;
+  --light-bg: #F4F7FE;
   --white-bg: #fff;
 }
 
@@ -49,7 +49,7 @@ $button_color: var(--white-color);
 $button_font_size: 16px;
 $buton_line_height: 24px;
 $buton_border_radius: 3px;
-$button_padding: 18px 40px;
+$button_padding: 18px 31px;
 $button_font_weight: 700;
 $button_font_family: $body-font;
 

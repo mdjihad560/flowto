@@ -29,6 +29,9 @@ h1,
   @include max(1400px) { 
     font-size: 70px;
   }
+  @include max(991px) { 
+    font-size: 60px;
+  }
   @include max(767px) { 
     font-size: 48px;
   }
@@ -38,9 +41,9 @@ h1,
 }
 h2,
 .h2 {
-  font-size: 85px;
-  line-height: 1.05em; /* 116.667% */
-  letter-spacing: -0.1px;
+  font-size: 80px;
+  line-height: 1em; /* 116.667% */
+  letter-spacing: -1px;
   @include max(1400px) { 
     font-size: 60px;
   }
@@ -54,37 +57,44 @@ h2,
 
 h3,
 .h3 {
-  font-size: 30px;
-  line-height: 1.4em;
+  font-size: 52px;
+  line-height: 1em;
+  letter-spacing: -1px;
+  @include max(767px) {
+    font-size: 48px;
+  }
+  @include max(479px) {
+    font-size: 36px;
+  }
+
+}
+h4,
+.h4 {
+  font-size: 28px;
+  line-height: 1.28em;
+  letter-spacing: -0.3px;
   @include max(767px) {
     line-height: 1.2em;
   }
   @include max(479px) {
     font-size: 24px;
   }
-
 }
-h4,
-.h4 {
-  font-size: 24px;
-  line-height: 28px;
-}
-
 h5,
 .h5 {
-  font-size: 20px;
+  font-size: 24px;
+  line-height: 1.41em;
 }
-
 h6,
 .h6 {
-  font-size: 18px;
+  font-size: 21px;
+  font-weight: 600;
 }
 
 p{
   margin-bottom: 24px;
   @include max(767px) {
     margin-bottom: 20px;
-    font-size: 20px;
   }
   &:last-child{
     margin-bottom: 0;

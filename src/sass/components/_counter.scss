@@ -1,43 +1,6 @@
 .flowto-counter{
   &-wrap{
     display: flex;
-    gap: 100px;
-    @include max(991px) {
-      justify-content: center;
-      gap: 50px;
-    }
-    @include max(479px) {
-      gap: 10px;
-    }
-  }
-  &-data{
-    h2{
-      margin-bottom: 5px!important;
-      @include max(479px) {
-        font-size: 48px;
-      }
-    }
-    p{
-      font-size: 18px;
-    }
-    &.light{
-      h2, p{
-        color: var(--white-color)
-      }
-      
-    }
-    em{
-      font-style: normal;
-      color: var(--secondary-color);
-    }
-    &.primary-color{
-      em{
-        color: var(--primary-color);
-      }
-    }
-  }
-  &-wrap2{
-    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     @include max(991px) {
@@ -46,24 +9,30 @@
     @include max(575px) {
       display: block;
     }
-    .flowto-counter-data{
-      @include max(991px) {
-        flex: 0 0 50%;
-        text-align: center;
-        &:nth-child(1){
-          margin-bottom: 30px;
-        }
-        &:nth-child(2){
-          margin-bottom: 30px;
-        }
+    
+  }
+  &-data{
+    text-align: center;
+    h2{
+      margin-bottom: 10px;
+      color: var(--primary-color);
+    }
+    @include max(991px) {
+      flex: 0 0 50%;
+      &:nth-child(1){
+        margin-bottom: 30px;
+      }
+      &:nth-child(2){
+        margin-bottom: 30px;
       }
       @include max(575px) {
         &:nth-child(3){
           margin-bottom: 30px;
         }
       }
-      
-    }
+  }
+
+    
   }
 }
 

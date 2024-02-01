@@ -1,22 +1,37 @@
-.flowto-icon-list{
-  margin-top: 24px;
+.flowto-iconlist{
+  text-align: left;
   ul{
     li{
       font-weight: 600;
-      font-size: 16px;
+      font-size: 21px;
       position: relative;
-      padding-left: 30px;
+      padding-left: 35px;
       text-align: left;
       display: inline-block;
-      margin-right: 20px;
+      margin-bottom: 20px;
+      color: var(--heading-color);
       img{
         position: absolute;
         left: 0;
-        top: 4px;
+        top: 1px;
       }
       &:last-child{
-        margin-right: 0;
+        margin-bottom: 0;
       }
+    }
+  }
+}
+
+.flowto-divider{
+  height: 1px;
+  border-top: 1px solid var(--gray-color);
+  &.defarent-color{
+    border-top: 1px solid var(--light-color);
+  }
+  &.divider-margin{
+    margin: 45px 0;
+    @include max(991px) {
+      margin: 30px 0;
     }
   }
 }

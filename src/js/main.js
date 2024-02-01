@@ -41,12 +41,12 @@ flowto PORTFOLIO ONE COLUMN JS
 /*--------------------------------------------------------------
 flowto RTL JS INIT
 --------------------------------------------------------------*/
-    const bodyEl = document.querySelector('body')
-    const btnEl = document.querySelector('#flowto-ltr-rtl')
-    btnEl.addEventListener('click', () => {
-      const dir = (bodyEl.getAttribute('dir') === 'rtl') ? 'ltr' : 'rtl'
-      bodyEl.setAttribute('dir', dir)
-    }, false)
+    // const bodyEl = document.querySelector('body')
+    // const btnEl = document.querySelector('#flowto-ltr-rtl')
+    // btnEl.addEventListener('click', () => {
+    //   const dir = (bodyEl.getAttribute('dir') === 'rtl') ? 'ltr' : 'rtl'
+    //   bodyEl.setAttribute('dir', dir)
+    // }, false)
 
 
 /*--------------------------------------------------------------
@@ -131,9 +131,9 @@ var flowto_counter = $('#flowto-counter');
 /*--------------------------------------------------------------
 flowto BRAND SLIDER ONE
 --------------------------------------------------------------*/
-var flowto_brand_slider = $('.flowto-brand-slider');
-if(flowto_brand_slider.is_exist()){
-  flowto_brand_slider.slick({
+var flowto_brand_slider1 = $('.flowto-brand-slider1');
+if(flowto_brand_slider1.is_exist()){
+  flowto_brand_slider1.slick({
   infinite: true,
   slidesToShow: 3, 
   slidesToScroll: 1,

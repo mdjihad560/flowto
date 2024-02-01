@@ -1,5 +1,10 @@
 .flowto-thumb{
   position: relative;
+  &.boxshadow{
+    border-radius: 10px;
+    background-color: var(--white-bg);
+    box-shadow: 0px 3.663px 73.257px 0px rgba(0, 0, 0, 0.08);
+  }
   @include max(991px) {
     margin-bottom: 35px;
   }
