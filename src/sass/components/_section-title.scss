@@ -56,7 +56,25 @@
   }
 }
 
+.flowto-extra-padding{
+  padding: 50px 0 106px;
+  @include max(991px) {
+    padding: 50px 0 56px;
+  }
+  @include max(767px) {
+    padding: 40px 0 36px;
+  }
+}
 
+.flowto-extra-padding2{
+  padding: 130px 0;
+  @include max(991px) {
+    padding: 100px 0 140px;
+  }
+  @include max(767px) {
+    padding: 80px 0 110px;
+  }
+}
 .flowto-section-title{
   padding-bottom: 80px;
   @include max(767px) {
@@ -95,9 +113,12 @@
     }
   }
   &.flowto-two-column-title{
+    h2{
+      margin: 0;
+    }
     @include max(991px) {
       h2{
-        margin-bottom: 20px;
+        margin-bottom: 24px;
       }
     }
   }

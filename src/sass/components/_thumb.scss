@@ -7,6 +7,7 @@
   }
   @include max(991px) {
     margin-bottom: 35px;
+    text-align: center;
   }
   &.thumb-pr{
     padding-right: 100px;
@@ -55,6 +56,27 @@
 	100% {
 		transform: translatey(0px);
 	}
+}
+
+.all-brand-logo{
+  img{
+    -webkit-animation: rotate-animation 18s infinite linear;
+    -moz-animation: rotate-animation 18s infinite linear;
+    -o-animation: rotate-animation 18s infinite linear;
+    animation: rotate-animation 18s infinite linear;
+  }
+}
+
+@keyframes rotate-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .flowto-v2-thumb{

@@ -239,21 +239,6 @@ if(flowto_brand_slider3.is_exist()){
 
 }
 
-/*--------------------------------------------------------------
-flowto TESTIMONIAL SLIDER
---------------------------------------------------------------*/
-// var flowto_t_slider = $('.flowto-testimonial-slider');
-// if(flowto_t_slider.is_exist()){
-//   flowto_t_slider.slick({
-//   infinite: true,
-//   slidesToShow: 1, 
-//   slidesToScroll: 1,
-//   arrows: false,
-//   dots: false,
-//   autoplay: false, 
-// });
-
-// }
 
 /*--------------------------------------------------------------
 flowto TESTIMONIAL SLIDER
@@ -297,6 +282,23 @@ if(flowto_t_slider.is_exist()){
 });
 
 }
+
+/*--------------------------------------------------------------
+flowto TESTIMONIAL SLIDER
+--------------------------------------------------------------*/
+var flowto_t_slider2 = $('.flowto-testimonial-slider2');
+if(flowto_t_slider2.is_exist()){
+  flowto_t_slider2.slick({
+  infinite: true,
+  slidesToShow: 1, 
+  slidesToScroll: 1,
+  arrows: false,
+  dots: true,
+  autoplay: false, 
+});
+
+}
+
 
 
 /*--------------------------------------------------------------

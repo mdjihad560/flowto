@@ -58,21 +58,6 @@
 }
 
 
-
-// img.flowto-video-icon {
-//   position: absolute;
-//   left: 50%;
-//   top: 50%;
-//   transform: translate(-50%, -50%);
-// }
-// img.flowto-video-circle{
-//   -webkit-animation: rotate-animation 10s infinite linear;
-//   -moz-animation: rotate-animation 10s infinite linear;
-//   -o-animation: rotate-animation 10s infinite linear;
-//   animation: rotate-animation 10s infinite linear;
-// }
-
-
 .flowto-video{
   &-column{
     padding: 30px;
@@ -110,6 +95,8 @@ img.video-sevice {
   
 }
 
+
+// rtl support
 [dir="rtl"]{
   .flowto-hero-video img{
     margin-right: 0;
