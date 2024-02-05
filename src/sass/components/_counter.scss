@@ -9,7 +9,12 @@
     @include max(575px) {
       display: block;
     }
-    
+    &.samll-max-width{
+      max-width: 500px;
+      @include max(991px) {
+        margin: 0 auto;
+      }
+    }
   }
   &-data{
     &.center{
@@ -41,7 +46,16 @@
         }
       }
   }
-
+  }
+  &-data2{
+    @include max(991px) {
+     margin: 0!important;
+    }
+    &:nth-child(1){
+      @include max(575px) {
+        margin: 30px!important;
+       }
+    }
     
   }
 }

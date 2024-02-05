@@ -3,27 +3,20 @@
     border-radius: 10px;
     overflow: hidden;
     margin-bottom: 24px;
-    background-color: var(--light-bg);
-    border: 1px solid var(--heading-color);
+    background-color: var(--white-bg);
+    border: 1px solid var(--gray-color);
     &:hover .flowto-blog-thumb img{
       transform: scale(1.08);
     }
-    &:hover .flowto-blog-btn path{
-      stroke: var(--primary-color);
+    &:hover .flowto-blog-btn {
+      color: var(--primary-color);
+      path{
+        stroke: var(--primary-color);
+      }
+      
     }
   }
-  &-categorie {
-    top: 24px;
-    right: 24px;
-    padding: 10.5px 19px;
-    line-height: 1;
-    border-radius: 3px;
-    font-size: 14px;
-    font-weight: 700;
-    position: absolute;
-    color: var(--heading-color);
-    background-color: var(--secondary-color);
-  }
+
   &-thumb{
     position: relative;
     overflow: hidden;
@@ -34,19 +27,47 @@
       transition: all 0.4s;
     }
   }
-  &-data{
-    padding: 24px;
-    p{
-      margin-bottom: 10px;
+  &-meta{
+    margin-bottom: 20px;
+    ul{
+      li{
+        display: inline-block;
+        margin-right: 18px;
+        &:last-child{
+          margin-right: 0;
+        }
+        a{
+          color: var(--body-color);
+          font-weight: 600;
+          font-size: 16px;
+          display: block;
+          line-height: 24px;
+          &.categorie{
+            padding: 8px 16px;
+            border-radius: 50px;
+            background-color: var(--light-color);
+          }
+        }
+      }
     }
-    h3 {
-      margin-bottom: 25px;
+  }
+  &-data{
+    padding: 30px;
+    h4 {
+      margin-bottom: 20px;
     }
   }
   &-btn{
-    path{
-      transition: all 0.4s;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--heading-color);
+    svg{
+      margin-left: 8px;
+      path{
+        transition: all 0.4s;
+      }
     }
+    
   }
 }
 

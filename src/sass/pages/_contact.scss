@@ -18,3 +18,85 @@
   }
 }
 
+// contact section v3
+
+
+.flowto-contact-info{
+  &-item{
+    padding: 40px;
+    display: flex;
+    transition: all 0.4s;
+    &:hover{
+      box-shadow: 0 4px 80px rgba(0, 0, 0, 0.08);
+    }
+    &:hover .flowto-contact-info{
+      &-data{
+        h5{
+          color: var(--primary-color);
+        }
+      }
+      &-icon{
+        svg{
+          path{
+            stroke: var(--primary-color);
+          }
+        }
+      }
+      
+    }
+    @include max(991px) {
+      padding: 30px;
+    }
+  }
+  &-icon{
+    flex-shrink: 0;
+    margin-right: 24px;
+    svg{
+      path{
+        stroke: var(--heading-color);
+        transition: all 0.4s;
+      }
+    }
+  }
+  &-data{
+    h5{
+      margin-bottom: 10px;
+      transition: all 0.4s;
+    }
+    p{
+      font-size: 21px;
+      color: var(--body-color);
+    }
+  }
+}
+
+.flowto-contact{
+  &-wrap{
+    @include max(991px) {
+      margin-top: 40px;
+    }
+  }
+  &-field{
+    margin-bottom: 24px;
+  }
+  &-title{
+    max-width: 525px;
+    h4{
+      margin-bottom: 10px;
+    }
+    p{
+      font-size: 21px;
+      line-height: 34px;
+      @include max(991px) {
+        font-size: 20px;
+        line-height: 28px;
+      }
+    }
+  }
+}
+
+#flowto-submit-btn{
+  width: 100%;
+  border-radius: 50px;
+}
+

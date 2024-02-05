@@ -167,12 +167,11 @@ if(flowto_brand_slider1.is_exist()){
 /*--------------------------------------------------------------
 flowto BRAND SLIDER TWO
 --------------------------------------------------------------*/
-var flowto_brand_slider = $('.flowto-brand-slider2');
-if(flowto_brand_slider.is_exist()){
-  flowto_brand_slider.slick({
-  rtl: true,
+var flowto_brand_slider2 = $('.flowto-brand-slider2');
+if(flowto_brand_slider2.is_exist()){
+  flowto_brand_slider2.slick({
   infinite: true,
-  slidesToShow: 3, 
+  slidesToShow: 5, 
   slidesToScroll: 1,
   arrows: false,
   dots: false,
@@ -295,6 +294,24 @@ if(flowto_t_slider2.is_exist()){
   arrows: false,
   dots: true,
   autoplay: false, 
+});
+
+}
+
+/*--------------------------------------------------------------
+flowto TESTIMONIAL SLIDER
+--------------------------------------------------------------*/
+var flowto_t_slider3 = $('.flowto-testimonial-slider3');
+if(flowto_t_slider3.is_exist()){
+  flowto_t_slider3.slick({
+  infinite: true,
+  slidesToShow: 1, 
+  slidesToScroll: 1,
+  arrows: true,
+  dots: false,
+  autoplay: false, 
+  prevArrow: '<button class="slide-arrow flowto-t-next"></button>',
+	nextArrow: '<button class="slide-arrow flowto-t-prev"></button>',
 });
 
 }

@@ -1,5 +1,9 @@
 .flowto-thumb{
+  z-index: 0;
   position: relative;
+  img{
+    border-radius: 10px;
+  }
   &.boxshadow{
     border-radius: 10px;
     background-color: var(--white-bg);

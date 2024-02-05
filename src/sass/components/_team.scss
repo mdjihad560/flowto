@@ -1,26 +1,51 @@
 .flowto-team{
   &-wrap{
     margin-bottom: 24px;
+    &:hover .flowto-team-data.top-position{
+      bottom: 0;
+      opacity: 1;
+      visibility: visible;
+    }
+    &:hover .flowto-team-thumb:before{
+      opacity: 1;
+    }
   }
   &-thumb{
     border-radius: 10px;
     overflow: hidden;
     position: relative;
+    &::before{
+      content: "";
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: all 0.4s;
+      position: absolute;
+      background: linear-gradient(180deg, rgba(18, 18, 18, 0) 48.44%, #121212 100%);
+    }
   }
   &-data{
-    left: 20px;
-    bottom: 20px;
-    padding: 20px;
-    border-radius: 10px;
-    width: calc(100% - 40px);
-    position: absolute;
-    background-color: var(--white-bg);
-    h4{
-      margin-bottom: 10px;
+    &.top-position{
+      left: 0;
+      bottom: -50px;
+      padding: 23px;
+      opacity: 0;
+      visibility: hidden;
+      position: absolute;
+      transition: all 0.4s;
+    }
+    h6{
+      margin-top: 15px;
+      margin-bottom: 5px;
     }
     p{
-      margin: 0;
-      font-size: 18px;
+      margin-bottom: 12px;
+      color: var(--white-color);
+    }
+    span{
+      font-size: 16px;
     }
   }
 }

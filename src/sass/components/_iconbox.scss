@@ -157,6 +157,79 @@
   
 }
 
+.flowto-service{
+  &-item{
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--body-color);
+    &:first-child{
+      padding-top: 0;
+    }
+    &:last-child{
+      padding-bottom: 0;
+      border: none;
+    }
+    @include max(991px) {
+      display: block;
+      padding: 30px 0;
+    }
+    &:hover .flowto-service-icon{
+      svg{
+        path{
+          stroke: var(--primary-color);
+        }
+      }
+    }
+  }
+  &-data{
+    &:nth-child(1) {
+      flex: 0 0 38%;
+    }
+    &:nth-child(2) {
+      flex: 0 0 52%;
+      padding: 0 43px;
+      @include max(991px) {
+        padding: 0;
+      }
+    }
+    h3{
+      color: var(--white-color);
+      @include max(991px) {
+        margin-bottom: 24px;
+      }
+    }
+    p{
+      font-size: 21px;
+      line-height: 34px;
+      color: var(--white-color);
+      @include max(991px) {
+        font-size: 20px;
+        line-height: 28px;
+      }
+    }
+  }
+  &-icon{
+    text-align: right;
+    flex: 0 0 10%;
+    svg{
+      path{
+        transition: all 0.4s;
+      }
+    }
+    @include max(991px) {
+      text-align: left;
+      margin-top: 20px;
+    }
+  }
+}
+.flowto-service-btn-center {
+  text-align: center;
+  margin-top: 80px;
+  @include max(991px) {
+    margin-top: 60px;
+  }
+}
 
 // rtl support
 

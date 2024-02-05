@@ -1,0 +1,39 @@
+.flowto-thumb-shape1 {
+  position: absolute;
+  top: 50px;
+  left: -60px;
+  z-index: -1;
+  animation: float-left-right 6s ease-in-out infinite;
+  @include max(991px) {
+    display: none;
+  }
+}
+.flowto-thumb-shape2 {
+  position: absolute;
+  top: 50px;
+  right: -100px;
+  z-index: -1;
+  animation: float-left-right 6s ease-in-out infinite;
+  @include max(991px) {
+    display: none;
+  }
+}
+.border-radius30{
+  border-radius: 30px;
+  @include max(991px) {
+    border-radius: 20px
+  }
+  @include max(767px) {
+    border-radius: 10px
+  }
+}
+
+.flowto-section-shape {
+  position: absolute;
+  top: 0;
+  left: 50px;
+  animation: float-left-right 6s ease-in-out infinite;
+  @include max(991px) {
+    display: none;
+  }
+}

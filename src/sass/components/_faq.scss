@@ -73,6 +73,27 @@
   
 }
 
+.accordion-three{
+  .flowto-accordion-item{
+    margin: 0;
+    padding: 45px 0;
+    border-bottom: 1px solid var(--gray-color);
+    @include max(991px) {
+      padding: 30px 0;
+    }
+    &:first-child{
+      padding-top: 0;
+    }
+    &:last-child{
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+  }
+  .flowto-active-icon, 
+  .flowto-inactive-icon{
+    top: 10px;
+  }
+}
 
 .flowto-active-icon, 
 .flowto-inactive-icon {

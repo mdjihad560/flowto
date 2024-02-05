@@ -6,8 +6,8 @@
   height: 185px;
   opacity: 0;
   border-radius: 100%;
-  left: -45px;
-  top: -45px;
+  left: -44px;
+  top: -44px;
   z-index: 0;
   -webkit-animation: waves 3s ease-in-out infinite;
   animation: waves 3s ease-in-out infinite;
@@ -59,42 +59,38 @@
 
 
 .flowto-video{
-  &-column{
-    padding: 30px;
-    border-radius: 20px;
-    border: 1px solid var(--light-color);
-    background-color: var(--white-bg);
-    @include max(479px) {
-      padding: 20px;
-      border-radius: 10px;
-    }
-  }
   &-wrap{
     border-radius: 20px;
     overflow: hidden;
     position: relative;
-    margin-right: 20px;
     @include max(991px) {
-      margin-right: 0;
       margin-bottom: 30px;
     }
   }
 }
 
-.flowto-review-video {
+.flowto-video-icon {
   top: 50%;
   left: 50%;
   position: absolute;
   transform: translate(-50%, -50%);
 }
 
-img.video-sevice {
+.margin-top-minus{
+  margin-top: -100px;
   @include max(991px) {
-    width: 75px;
+    margin-top: -50px;
   }
-  
 }
-
+.flowto-video-shape {
+  position: absolute;
+  top: 50px;
+  right: -75px;
+  animation: float-left-right 6s ease-in-out infinite;
+  @include max(991px) {
+    display: none;
+  }
+}
 
 // rtl support
 [dir="rtl"]{

@@ -20,6 +20,18 @@
       }
     }
   }
+  &.light{
+    ul{
+      li{
+        a{
+          color: var(--white-color);
+          &:hover{
+            color: var(--primary-color);
+          }
+        }
+      }
+    }
+  }
 }
 .flowto-social-icon{
   &.social-box{
