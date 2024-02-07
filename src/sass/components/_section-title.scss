@@ -94,6 +94,9 @@
     &.w-large{
       max-width: 850px;
     }
+    &.w-large-xl{
+      max-width: 890px;
+    }
     
   }
     padding-bottom: 80px;
@@ -169,6 +172,15 @@
   }
   &.m-left-70{
     margin-left: 70px;
+    @include max(1399px) {
+      margin-left: 40px;
+    }
+    @include max(991px) {
+      margin-left: 0px;
+    }
+  }
+  &.m-left-85{
+    margin-left: 85px;
     @include max(1399px) {
       margin-left: 40px;
     }

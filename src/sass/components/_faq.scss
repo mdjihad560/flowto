@@ -108,6 +108,52 @@
   }
 }
 
+// faq normar start
+.flowto-faq-normal{
+  &-column{
+    gap: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @include max(1399px) {
+      gap: 24px;
+    }
+    @include max(991px) {
+      display: block;
+    }
+  }
+  &-wrap{
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    @include max(991px) {
+      gap: 24px;
+    }
+    
+  }
+  &-item{
+    gap: 12px;
+    display: flex;
+  }
+  &-icon{
+    position: relative;
+    top: 3px;
+    flex-shrink: 0;
+  }
+  &-data{
+    h4{
+      margin-bottom: 15px;
+    }
+    p{
+      font-size: 21px;
+      line-height: 34px;
+      @include max(991px) {
+        font-size: 20px;
+        line-height: 28px;
+      }
+    }
+  }
+}
+
 // rtl support
 
 [dir="rtl"]{

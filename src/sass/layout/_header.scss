@@ -24,7 +24,23 @@ header.flowto-header-section.sticky-two.sticky-menu{
 // header.flowto-header-section.sticky-three.sticky-menu{
 //   background-color: var(--light-bg);
 // }
-
+img.flowto-sticky-logo {
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  transition: all 0.4s;
+  @include max(991px) {
+    opacity: 1;
+  }
+}
+.sticky-menu img.flowto-sticky-logo{
+  opacity: 1;
+}
+img.flowto-mobile-hide{
+  @include max(991px) {
+    opacity: 0;
+  }
+}
 .flowto-header-btn-wrap{
   display: flex;
   align-items: center;

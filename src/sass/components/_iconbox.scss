@@ -230,6 +230,95 @@
     margin-top: 60px;
   }
 }
+// end v3
+
+.flowto-feature{
+  &-item{
+    display: flex;
+    padding: 20px;
+    transition: all 0.4s;
+    &:hover{
+      box-shadow: 0 4px 80px rgba(0,0,0,.08);
+    }
+  }
+  &-icon{
+    flex-shrink: 0;
+    margin-right: 12px;
+  }
+}
+
+.flowto-numberbox{
+  &-wrap{
+    z-index: 0;
+    text-align: center;
+    max-width: 360px;
+    margin: 0 auto 24px;
+    position: relative;
+    // &:before{
+    //   content: "";
+    //   left: 0;
+    //   top: 0;
+    //   width: 100%;
+    //   height: 100%;
+    //   z-index: -1;
+    //   position: absolute;
+    //   background-repeat: no-repeat;
+    //   background-image: url("../images/v4/number-shape.png");
+    // }
+  }
+  &-number{
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+    display: flex;
+    margin: 0 auto 30px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white-bg);
+    @include max(767px) {
+      width: 50px;
+      height: 50px;
+      margin: 0 auto 20px;
+    }
+    h4{
+      color: var(--primary-color);
+    }
+  }
+  &-data{
+    h5{
+      margin-bottom: 15px;
+    }
+    h5, p{
+      color: var(--white-color);
+    }
+  }
+  &-shape{
+    
+    &.shape1{
+      position: absolute;
+      left: 21%;
+      width: 25%;
+      top: 0px;
+      @include max(991px) {
+        left: 31%;
+        width: 38%;
+      }
+      @include max(767px) {
+        display: none;
+      }
+    }
+    &.shape2{
+      position: absolute;
+      right: 21%;
+      width: 25%;
+      top: 25px;
+      @include max(991px) {
+        display: none;
+      }
+    }
+  }
+}
+
 
 // rtl support
 
@@ -246,11 +335,6 @@
     margin-right: 0;
     text-align: right;
   }
-  .flowto-iconbox-btn:hover img {
-    transform: translateX(-90px);
-  }
-  .flowto-iconbox-number{
-    margin-right: 0;
-    margin-left: 24px;
-  }  
+
+  
 }

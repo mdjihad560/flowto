@@ -3,6 +3,23 @@
     padding: 30px;
     border-radius: 10px;
     background-color: var(--white-bg);
+    &.testimonial-border{
+      border-radius: 10px;
+      margin-bottom: 24px;
+      border: 2px solid var(--light-color);
+    }
+    &.testimonial-grid{
+      padding: 0;
+      display: grid;
+      gap: 24px;
+      margin-bottom: 24px;
+      align-items: center;
+      grid-template-columns: 260px 1fr;
+      @include max(767px) {
+        grid-template-columns: 1fr;
+      }
+     
+    }
   }
   &-rating{
     margin-bottom: 15px;
@@ -30,6 +47,10 @@
         line-height: 28px;
       }
     }
+  }
+  &-thumb{
+    border-radius: 10px;
+    overflow: hidden;
   }
   &-author{
     display: flex;

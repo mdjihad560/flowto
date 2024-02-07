@@ -60,6 +60,9 @@
     border-radius: 10px;
     position: relative;
     background-color: var(--blue-bg);
+    @include max(1199px) {
+      padding: 70px;
+    }
     @include max(991px) {
       padding: 60px;
     }

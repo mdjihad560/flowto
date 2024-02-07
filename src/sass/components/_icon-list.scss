@@ -10,6 +10,9 @@
       display: inline-block;
       margin-bottom: 20px;
       color: var(--heading-color);
+      @include max(767px) {
+        font-size: 20px;
+      }
       img{
         position: absolute;
         left: 0;
@@ -19,6 +22,40 @@
         margin-bottom: 0;
       }
     }
+  }
+  &.iconlist-grid{
+    ul{
+      column-count: 2;
+      @include max(575px) {
+        column-count: 1;
+      }
+      li{
+        @include max(575px) {
+          display: block;
+        }
+      }
+    }
+  }
+  &.iconlist-white{
+    ul{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+      li{
+        margin: 0;
+        font-size: 18px;
+        display: inline-block;
+        color: var(--white-color);
+        img{
+          top: 4px;
+        }
+      }
+    }
+  }
+  &.extra-width{
+    max-width: 650px;
+    margin: 0 auto;
   }
 }
 

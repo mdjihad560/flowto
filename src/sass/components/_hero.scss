@@ -29,6 +29,11 @@
     @include max(991px) {
       text-align: center;
     }
+    h1{
+      span{
+        color: var(--secondary-color);
+      }
+    }
     h6{
       font-weight: 700;
       margin-bottom: 20px;
@@ -135,6 +140,72 @@
   @include max(479px) {
       padding: 120px 0 130px;
   }
+}
+// End v3
+
+.flowto-hero {
+  &-section4{
+    z-index: 0;
+    padding: 195px 0 130px;
+    position: relative;
+    &:before {
+      content: "";
+      left: 0;
+      top: 0;
+      z-index: -1;
+      width: 33%;
+      height: 100%;
+      position: absolute;
+      background-color: var(--blue-bg);
+      @include max(991px) {
+        content: none;
+      }
+    }
+    @include max(991px) {
+      padding: 160px 0 100px;
+    }
+    @include max(767px) {
+      padding: 160px 0 80px;
+    }
+    @include max(479px) {
+        padding: 120px 0 80px;
+    }
+  }
+  &-thumb2{
+    padding-top: 40px;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+  
+}
+
+.flowto-hero-content-wrap{
+  margin-right: 11px;
+  @include max(1399px) {
+    margin-right: 0;
+  }
+}
+
+// end v4
+
+.flowto-hero {
+  &-section5{
+    z-index: 0;
+    padding: 195px 0 130px;
+    background-repeat: no-repeat;
+    background-position: center;
+    @include max(991px) {
+      padding: 160px 0 100px;
+    }
+    @include max(767px) {
+      padding: 160px 0 80px;
+    }
+    @include max(479px) {
+        padding: 120px 0 80px;
+    }
+  }
+
+  
 }
 
 
