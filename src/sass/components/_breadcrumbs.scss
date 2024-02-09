@@ -1,7 +1,7 @@
 .flowto-breadcrumb{
   text-align: center;
   padding: 195px 0 130px;
-  background-color: var(--dark-bg);
+  background-color: var(--light-bg);
   @include max(991px) {
     padding: 170px 0 100px;
   }
@@ -11,36 +11,26 @@
   @include max(575px) {
     padding: 130px 0 80px;
   }
-  &.breadcrumb-light{
-    background-color: var(--white-bg);
-    border-bottom: 1px solid var(--light-color);
-  }
 }
 
 h1.post__title{
   margin-bottom: 50px;
-  color: var(--white-color);
   @include max(1400px) {
     margin-bottom: 30px;
   }
 }
-.breadcrumb-light{
-  h1.post__title{
-    color: var(--heading-color);
-   
-  }
-}
+
 
 .breadcrumbs{
   ul{
     li{
-      font-weight: 700;
       line-height: 1;
       z-index: 0;
-      padding: 0 10px;
+      font-size: 21px;
+      padding: 0 18px;
       position: relative;
       display: inline-block;
-      color: var(--primary-color);
+      color: var(--heading-color);
       @include max(767px) {
         font-size: 18px;
       }
@@ -52,7 +42,7 @@ h1.post__title{
       }
       &:before {
         content: "";
-        right: -10px;
+        right: -9px;
         top: 0;
         width: 100%;
         height: 100%;
@@ -61,14 +51,14 @@ h1.post__title{
         background-size: 9px;
         background-position: center right;
         background-repeat: no-repeat;
-        background-image: url(../images/blog/backspece.svg);
+        background-image: url(../images/about/arrow.png);
       }
       &:last-child:before{
         content: none;
       }
       a{
         font-weight: 400;
-        color: var(--white-color);
+        color: var(--primary-color);
       }
     }
   }

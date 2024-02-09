@@ -95,6 +95,12 @@
   
 }
 
+.flowto-inner-cta{
+  width: 100%;
+  @include max(991px) {
+    margin-top: 40px;
+  }
+}
 
 // rtl support 
 [dir="rtl"]{

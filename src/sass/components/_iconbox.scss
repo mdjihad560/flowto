@@ -319,6 +319,53 @@
   }
 }
 
+// service single 
+
+.flowto-feature2{
+  &-wrap{
+    margin-bottom: 24px;
+    &:hover .flowto-feature2{
+      &-header{
+        border-bottom: 3px solid var(--primary-color);
+      }
+      &-icon{
+        svg{
+          path{
+            stroke: var(--primary-color);
+          }
+        }
+      }
+      &-data{
+        h5{
+          color: var(--primary-color);
+        }
+      }
+    }
+  }
+  &-header{
+    display: flex;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    transition: all 0.4s;
+    border-bottom: 3px solid var(--light-color);
+  }
+  &-icon{
+    margin-right: 12px;
+    flex-shrink: 0;
+    svg{
+      path{
+        transition: all 0.4s;
+        stroke: var(--heading-color);
+      }
+    }
+  }
+  &-data{
+    h5{
+      transition: all 0.4s;
+    }
+  }
+}
+
 
 // rtl support
 

@@ -57,6 +57,13 @@
     max-width: 650px;
     margin: 0 auto;
   }
+  &.small-width{
+    max-width: 520px;
+    @include max(991px) {
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
 }
 
 .flowto-divider{

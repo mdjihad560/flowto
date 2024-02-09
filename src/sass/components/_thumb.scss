@@ -13,42 +13,9 @@
     margin-bottom: 35px;
     text-align: center;
   }
-  &.thumb-pr{
-    padding-right: 100px;
-    @include max(991px) {
-      padding-right: 0;
-    }
-  }
-  &.thumb-pl{
-    padding-left: 100px;
-    @include max(1300px) {
-      padding-left: 50px;
-    }
-    @include max(991px) {
-      padding-left: 0;
-    }
-  }
+
 }
 
-.flowto-thumb-card {
-  position: absolute;
-  bottom: 60px;
-  right: 15px;
-  animation: float-top-bottom  6s ease-in-out infinite;
-  @include max(1199px) {
-    width: 230px;
-  }
-}
-.flowto-thumb-card2 {
-  position: absolute;
-  bottom: 60px;
-  right: -18%;
-  animation: float-top-bottom  6s ease-in-out infinite;
-  @include max(1300px) {
-    width: 230px;
-    right: 0;
-  }
-}
 
 @keyframes float-top-bottom {
 	0% {
@@ -62,14 +29,14 @@
 	}
 }
 
-.all-brand-logo{
-  img{
-    -webkit-animation: rotate-animation 18s infinite linear;
-    -moz-animation: rotate-animation 18s infinite linear;
-    -o-animation: rotate-animation 18s infinite linear;
-    animation: rotate-animation 18s infinite linear;
-  }
-}
+// .all-brand-logo{
+//   img{
+//     -webkit-animation: rotate-animation 18s infinite linear;
+//     -moz-animation: rotate-animation 18s infinite linear;
+//     -o-animation: rotate-animation 18s infinite linear;
+//     animation: rotate-animation 18s infinite linear;
+//   }
+// }
 
 @keyframes rotate-animation {
   0% {
@@ -83,108 +50,8 @@
   }
 }
 
-.flowto-v2-thumb{
-  position: relative;
-  z-index: 0;
-  &.thumb-mr{
-    margin-right: 65px;
-    @include max(1199px) {
-      margin-right: 15px;
-    }
-    @include max(991px) {
-      margin-right: 0;
-    }
-  }
-  &.thumb-ml{
-    margin-left: 65px;
-    @include max(1199px) {
-      margin-left: 15px;
-    }
-    @include max(991px) {
-      margin-left: 0;
-    }
-  }
-  
-  @include max(991px) {
-    margin-bottom: 40px;
-  }
-  img{
-    border-radius: 10px;
-  }
-  &-shape{
-    position: absolute;
-    left: -30%;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: -1;
-    @include max(991px) {
-      display: none;
-    }
-  }
-}
 
-.flowto-v3-thumb {
-  margin-right: 27px;
-  position: relative;
-  img{
-    border-radius: 20px;
-  }
-  @include max(991px) {
-    margin-right: 0;
-    margin-bottom: 40px;
-  }
-}
 
-.flowto-v3-card {
-  bottom: 40px;
-  left: -100px;
-  width: 65%;
-  overflow: hidden;
-  position: absolute;
-  box-shadow: 0px 4px 60px 0px rgba(0, 0, 0, 0.12);
-  animation: float-top-bottom  6s ease-in-out infinite;
-  img{
-    border-radius: 10px;
-  }
-  @include max(1299px) {
-    left: -20px;
-  }
-  @include max(767px) {
-    display: none;
-  }
-}
-
-.flowto-v3-thumb2 {
-  margin-left: 30px;
-  position: relative;
-  img{
-    border-radius: 20px;
-  }
-  @include max(991px) {
-    margin-left: 0;
-    margin-bottom: 40px;
-  }
-}
-
-.flowto-v3-card2{
-  bottom: 55px;
-  left: -20px;
-  width: 65%;
-  overflow: hidden;
-  
-  position: absolute;
-  box-shadow: 0px 2.534px 38.004px 0px rgba(0, 0, 0, 0.12);
-  animation: float-top-bottom  6s ease-in-out infinite;
-  img{
-    border-radius: 10px;
-  }
-  @include max(1299px) {
-    left: -20px;
-  }
-  @include max(767px) {
-    display: none;
-  }
-}
 
 .flowto-career-thumb {
   border-radius: 20px;
@@ -194,6 +61,11 @@
     margin-right: 0;
     margin-bottom: 40px;
   }
+}
+
+// 
+.flowto-service-single-thumb{
+  margin-bottom: 80px;
 }
 
 // rtl support

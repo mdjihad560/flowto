@@ -37,6 +37,12 @@
       font-style: normal;
       color: var(--primary-color);
     }
+    &.light{
+      h2, p{
+        color: var(--white-color);
+      }
+    }
+
     @include max(991px) {
       flex: 0 0 50%;
       text-align: center;
@@ -67,6 +73,10 @@
     }
     
   }
+}
+
+.border-radius10{
+  border-radius: 10px;
 }
 
 // rtl support

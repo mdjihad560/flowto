@@ -55,3 +55,59 @@
     }
   }
 }
+
+.tab-two-wrap{
+  .nav{
+    margin: 0 0 75px;
+    border: 0;
+    gap: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    @include max(1199px) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @include max(991px) {
+      margin: 0 0 50px;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    @include max(767px) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @include max(479px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .nav-link{
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 50px;
+    background-color: var(--light-color);
+   
+    &::before{
+      content: none;
+    }
+    &.active{
+      color: var(--white-color);
+      background-color: var(--blue-bg);
+    }
+  }
+}
+
+.flowto-text{
+  &-wrap{
+    @include max(991px) {
+      margin-top: 40px;
+    }
+  }
+  &-item{
+    margin-bottom: 24px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+    h5{
+      margin-bottom: 12px;
+    }
+  }
+}

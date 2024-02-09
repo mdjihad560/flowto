@@ -47,6 +47,26 @@
     span{
       font-size: 16px;
     }
+    &.light{
+      h6{
+        margin-top: 20px;
+      }
+      h6, span{
+        color: var(--white-color);
+      }
+    }
+  }
+
+  // team inner
+  &-wrap2{
+    padding: 20px;
+    border-radius: 10px;
+    background-color:var(--body-color);
+    .flowto-team-thumb{
+      &:before{
+        content: none;
+      }
+    }
   }
 }
 
