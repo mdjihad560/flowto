@@ -75,6 +75,14 @@
     @include max(991px) {
       margin-top: 40px;
     }
+    &.boxshadow{
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 80px rgba(0,0,0,.08);
+      @include max(991px) {
+        padding: 30px;
+      }
+    }
   }
   &-field{
     margin-bottom: 24px;
@@ -100,3 +108,39 @@
   border-radius: 50px;
 }
 
+.flowto-social-info{
+  &-wrap{
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    @include max(991px) {
+      grid-template-columns:1fr 1fr;
+    }
+    @include max(479px) {
+      grid-template-columns:1fr;
+    }
+  }
+  &-icon{
+    ul{
+      li{
+        a{
+          font-size: 24px;
+          font-weight: 700;
+          display: block;
+          padding: 43px;
+          transition: all 0.4s;
+          color: var(--white-color);
+          border: 1px solid var(--body-color);
+          &:hover{
+            background-color: var(--blue-bg);
+            border: 1px solid var(--blue-bg);
+          }
+          i{
+            font-size: 60px;
+            margin-bottom: 30px;
+          }
+        }
+      }
+    }
+  }
+}

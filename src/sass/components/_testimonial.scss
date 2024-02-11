@@ -229,6 +229,75 @@
   }
 }
 
+
+// end
+// start career page slider
+.flowto-t-two-column{
+  &-thumb2{
+    border-radius: 10px;
+    overflow: hidden;
+    @include max(991px) {
+      margin-bottom: 30px;
+    }
+  }
+  &-data2{
+    h6{
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+    p{
+      font-size: 21px;
+      line-height: 34px;
+      color: var(--heading-color);
+    }
+    span{
+      font-size: 16px;
+    }
+  }
+}
+
+.flowto-testimonial-slider4{
+  display: flex;
+
+}
+
+.flowto-testimonial-slider4 .flowto-t-next2,
+.flowto-testimonial-slider4 .flowto-t-prev2  {
+  right: 70px;
+  bottom: 0;
+  position: absolute;
+  &::before, &::before{
+    content: "\f053";
+    font-weight: 900;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    border-radius: 100px;
+    align-items: center;
+    transition: all 0.4s;
+    justify-content: center;
+    border: 1px solid var(--heading-color);
+    font-family: "Font Awesome 5 free";
+    background-color: var(--white-bg);
+    
+  }
+  &:hover::before, 
+    &:hover::after{
+      color: var(--white-color);
+      background-color: var(--blue-bg);
+      border: 1px solid var(--blue-bg);
+    }
+  
+}
+
+.flowto-testimonial-slider4 .flowto-t-prev2  {
+  right: 0;
+  &::before{
+    content: "\f054";
+
+  }
+}
+
 // trl support
 
 

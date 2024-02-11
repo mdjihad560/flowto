@@ -24,14 +24,23 @@ img {
 blockquote {
   font-weight: 700;
   position: relative;
-  font-size: 24px;
-  line-height: 30px;
+  font-size: 26px;
   border-radius: 10px;
-  padding: 30px;
-  margin: 0 0 24px;
-  color: var(--white-smoke);
-  font-family: $heading-font;
-  background-color: var(--dark-bg);
+  padding: 40px;
+  margin: 40px 0;
+  color: var(--heading-color);
+  background-color: var(--light-bg);
+  text-align: center;
+  line-height: 34px;
+  letter-spacing: -0.3px;
+  @include max(991px) {
+    padding: 30px;
+    margin: 24px 0;
+  }
+  img{
+    display: block;
+    margin: 0 auto 24px;
+  }
 }
 .border-transparent {
   border-color: transparent !important;

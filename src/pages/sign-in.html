@@ -1,24 +1,30 @@
 
 {% extends "layout/layout.html" %} {% block content %}
 
-{% include "../templates/layout/header-footer/header-one.html" %} 
+{% include "../templates/layout/header-footer/account-header.html" %} 
 
 
-<div class="section flowto-extra-section">
+<div class="section flowto-section-padding">
   <div class="container">
     <div class="flowto-section-title center">
-      <h2>Welcome Back</h2>
+      <h2>Log In</h2>
+      <p>Enter the information below to create your account</p>
     </div>
     <div class="flowto-account-wrap">
       <form action="#">
-        <div class="flowto-account-field">
-          <label>Enter email address</label>
-          <input type="email" placeholder="example@gmail.com">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="flowto-account-field">
+              <input type="email" placeholder="example@gmail.com">
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="flowto-account-field">
+              <input type="password" placeholder="Password">
+            </div>
+          </div>
         </div>
-        <div class="flowto-account-field">
-          <label>Enter Password</label>
-          <input type="password" placeholder="Enter Password">
-        </div>
+       <div class="col-lg-12">
         <div class="flowto-account-checkbox-wrap">
           <div class="flowto-account-checkbox">
             <input type="checkbox" id="check">
@@ -26,22 +32,12 @@
           </div>
           <a class="forgot-password" href="reset-password.html">Forgot password?</a>
         </div>
-        <button id="flowto-account-btn" type="submit"><span>Sign in</span></button>
-        <div class="flowto-or">
-          <p>or</p>
-        </div>
-        <a href="#" class="flowto-connect-login">
-          <img src="assets/images/icon/google.svg" alt="">
-          Sign up with Google
-        </a>
-        <a href="#" class="flowto-connect-login">
-          <img src="assets/images/icon/facebook.svg" alt="">
-          Sign up with Facebook
-        </a>
-
+        <button id="flowto-account-btn" type="submit"><span>Create account</span></button>
         <div class="flowto-account-bottom">
           <p>Not a member yet? <a href="sign-up.html">Sign up here</a></p>
         </div>
+       </div>
+        
       </form>
     </div>
   </div>

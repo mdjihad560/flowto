@@ -316,6 +316,24 @@ if(flowto_t_slider3.is_exist()){
 
 }
 
+/*--------------------------------------------------------------
+flowto TESTIMONIAL SLIDER
+--------------------------------------------------------------*/
+var flowto_t_slider4 = $('.flowto-testimonial-slider4');
+if(flowto_t_slider4.is_exist()){
+  flowto_t_slider4.slick({
+  infinite: true,
+  slidesToShow: 1, 
+  slidesToScroll: 1,
+  arrows: true,
+  dots: false,
+  autoplay: false, 
+  prevArrow: '<button class="slide-arrow flowto-t-next2"></button>',
+	nextArrow: '<button class="slide-arrow flowto-t-prev2"></button>',
+});
+
+}
+
 
 
 /*--------------------------------------------------------------

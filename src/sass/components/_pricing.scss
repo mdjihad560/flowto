@@ -209,8 +209,10 @@
       color: var(--heading-color)!important;
       background-color: var(--white-bg);
     }
-    &.outline{
+    &.pill{
       border-radius: 50px;
+    }
+    &.outline{
       color: var(--heading-color)!important;
       background-color: transparent !important;
       border: 2px solid var(--heading-color);
@@ -224,6 +226,10 @@
         background-color: var(--blue-bg) !important;
         border: 2px solid var(--blue-bg);
       }
+      
+    }
+    &.extra-m{
+      margin: 35px 0;
     }
   }
 }

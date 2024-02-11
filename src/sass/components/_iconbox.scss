@@ -43,6 +43,11 @@
         box-shadow: 0px 4px 80px 0px rgba(0, 0, 0, 0.08);
       }
     }
+    &.wrap3{
+      padding: 30px;
+      background-color: var(--white-bg);
+      border: 1.5px solid #7F8995;
+    }
     &.border-all{
       padding: 30px 25px;
       border: 1px solid var(--light-color);
@@ -133,6 +138,16 @@
     &.light{
       h3, h5, span, p{
         color: var(--white-color);
+      }
+    }
+    &.large{
+      p{
+        font-size: 21px;
+        line-height: 34px;
+        @include max(991px) {
+          font-size: 20px;
+          line-height: 28px;
+        }
       }
     }
   }
@@ -366,6 +381,44 @@
   }
 }
 
+// start integration pag
+
+.flowto-integration{
+  &-wrap{
+    padding: 30px;
+    margin-bottom: 24px;
+    border-radius: 10px;
+    background-color: var(--white-bg);
+  }
+  &-header{
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+  &-icon{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    box-shadow: 0 4px 80px rgba(0,0,0,.08);
+  }
+  &-data{
+    font-size: 16px;
+  }
+  &-body{
+    p{
+      font-size: 21px;
+      line-height: 34px;
+      @include max(991px) {
+        font-size: 20px;
+        line-height: 28px;
+      }
+    }
+  }
+}
 
 // rtl support
 
