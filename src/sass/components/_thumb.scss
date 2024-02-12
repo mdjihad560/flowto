@@ -29,14 +29,14 @@
 	}
 }
 
-// .all-brand-logo{
-//   img{
-//     -webkit-animation: rotate-animation 18s infinite linear;
-//     -moz-animation: rotate-animation 18s infinite linear;
-//     -o-animation: rotate-animation 18s infinite linear;
-//     animation: rotate-animation 18s infinite linear;
-//   }
-// }
+.all-brand-logo{
+  img{
+    -webkit-animation: rotate-animation 18s infinite linear;
+    -moz-animation: rotate-animation 18s infinite linear;
+    -o-animation: rotate-animation 18s infinite linear;
+    animation: rotate-animation 18s infinite linear;
+  }
+}
 
 @keyframes rotate-animation {
   0% {
