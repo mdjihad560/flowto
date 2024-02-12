@@ -1,26 +1,26 @@
 {% extends "layout/layout.html" %}
+{% set page_title = "404 Not Found" %}
  {% block content %}
 
-{% include "../templates/layout/header-footer/header-one.html" %} 
+{% include "../templates/layout/header-footer/header-three.html" %} 
 
-<div class="section flowto-extra-section">
+<div class="flowto-breadcrumb">
   <div class="container">
-    <div class="flowto-errors-wrap">
-      <div class="flowto-errors-thumb">
-        <img src="assets/images/about/404.png" alt="">
-      </div>
-      <h2>Oops! Looks like you took a wrong turn</h2>
-      <div class="flowto-extra-mt">
-        <a class="flowto-default-btn" href="index.html"><span>Back To Home</span></a>
-      </div>
+    {% include "../templates/components/breadcrumbs/breadcrumbs.html" %}
+  </div>
+</div>
+<!-- End breadcrumb -->
+
+<div class="section flowto-section-padding2">
+  <div class="container">
+    <div class="flowto-errors-content">
+      <img src="assets/images/404.png" alt="">
+      <h2>The page you’re looking for isn’t available</h2>
+      <a class="flowto-icon-btn pill" href="index.html"><span>Back To Homepage <img src="assets/images/svg/arrow-right-white.svg" alt=""></span></a>
     </div>
   </div>
 </div>
-<!-- End section -->
 
-
-
-
-{% include "../templates/layout/header-footer/footer-one.html" %} 
+{% include "../templates/layout/header-footer/extra-footer.html" %} 
   
 {% endblock %}

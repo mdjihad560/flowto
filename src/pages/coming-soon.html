@@ -1,42 +1,21 @@
 
 {% extends "layout/layout.html" %} {% block content %}
 
-{% include "../templates/layout/header-footer/header-one.html" %} 
 
 
-<div class="section flowto-extra-section">
+{% include "../templates/layout/header-footer/account-header.html" %} 
+
+
+<div class="section flowto-coming-soon">
   <div class="container">
-    <div class="flowto-section-title center">
-      <h2>
-        Something great is coming soon! 
-      </h2>
+    <div class="flowto-coming-content">
+      <img src="assets/images/Progress.png" alt="">
+      <h1>
+        Coming soon!
+      </h1>
+      <p>Get notified when we launch! We're coming, with something special for you. enter your email here and stay with us.</p>
     </div>
-    <div class="flowto-countdown-wrap">
-      <div class="flowto-countdown-item">
-        <div class="countdown-days">
-          <div class="number"></div>
-        </div>
-        <p>Days</p>
-      </div>
-      <div class="flowto-countdown-item">
-        <div class="countdown-hours">
-          <div class="number"></div>
-        </div>
-        <p>Hours</p>
-      </div>
-      <div class="flowto-countdown-item">
-        <div class="countdown-minutes">
-          <div class="number"></div>
-        </div>
-        <p>Minutes</p>
-      </div>
-      <div class="flowto-countdown-item">
-        <div class="countdown-seconds">
-          <div class="number"></div>
-        </div>
-        <p>Seconds</p>
-      </div>
-    </div>
+  
     <form action="#">
       <div class="flowto-coming-newsletter">
         <input type="email" placeholder="Enter your email">
@@ -47,6 +26,6 @@
   </div>
 </div>
 
-{% include "../templates/layout/header-footer/footer-one.html" %} 
+{% include "../templates/layout/header-footer/extra-footer.html" %} 
 
 {% endblock %}

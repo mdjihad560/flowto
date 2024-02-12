@@ -40,18 +40,6 @@
     transform: translateY(-3px);
   }
 }
-.flowto-cta-shape{
-  right: -40px;
-  top: 0;
-  position: absolute;
-  animation: float-left-right 6s ease-in-out infinite;
-  @include max(1349px) {
-    width: 150px;
-  }
-  @include max(991px) {
-    display: none;
-  }
-}
 
 
 .flowto-cta {
@@ -110,10 +98,7 @@
       justify-content: inherit;
     }
   }
-  .flowto-cta-shape{
-    right: auto;
-    left: 0;
-  }
+
   .flowto-cta-content{
     text-align: right;
     

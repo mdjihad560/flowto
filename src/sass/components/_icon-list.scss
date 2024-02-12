@@ -72,6 +72,9 @@
   &.defarent-color{
     border-top: 1px solid var(--light-color);
   }
+  &.defarent-color2{
+    border-top: 1px solid var(--body-color);
+  }
   &.divider-margin{
     margin: 45px 0;
     @include max(991px) {
